@@ -1,6 +1,8 @@
 import React from "react";
 import "./List.css";
 
+// This component is used to display the list of posts.
+
 const List = () => {
   return (
     <>

@@ -1,0 +1,36 @@
+.sidebar {
+  flex: 0.45;
+  border-left: 1px solid #e4e4e4;
+  position: sticky;
+  top: 70px;
+  padding-left: 50px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  transition: 250ms all ease-in-out;
+}
+
+.col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.text-sidebar {
+  margin-bottom: 30px;
+  color: #000;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+}

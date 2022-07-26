@@ -21,13 +21,13 @@ function Navbar() {
   }, []);
 
   return (
-    <nav>
+    <nav style={{ background: "rgba(255,255,255)" }}>
       <div
         className="container"
         style={{
           // background: isScrolled ? "rgba(255,255,255)" : "transparent",
           margin: isScrolled ? "0em 9em" : "2.5em 9em",
-          paddingBottom: isScrolled ? "10px" : "3.5em",
+          paddingBottom: isScrolled ? "10px" : "2.5em",
           paddingTop: isScrolled ? "10px" : "",
         }}
       >

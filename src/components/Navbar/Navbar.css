@@ -6,7 +6,6 @@ nav {
   position: fixed;
   z-index: 500;
   margin: 0;
-  background: transparent;
 }
 
 .container > .logo.scroll > img {

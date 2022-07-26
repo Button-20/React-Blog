@@ -5,7 +5,7 @@ function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const handleScroll = () => {
     const position = window.pageYOffset;
-    if (position > 100) {
+    if (position > 50) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -21,15 +21,23 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={isScrolled ? "navbar" : "original"}>
-      <div className="container">
-        <div className="nav-left">
-          <div className="menu-button">
-            <img src="https://assets.website-files.com/61e343b8f87fb4d287394d48/61e4ea9c83acd6779728fb13_Menu.svg" />
-            <div className="menu-button-text">Menu</div>
-          </div>
+    <nav>
+      <div
+        className="container"
+        style={{
+          // background: isScrolled ? "rgba(255,255,255)" : "transparent",
+          margin: isScrolled ? "0em 9em" : "2.5em 9em",
+          paddingBottom: isScrolled ? "10px" : "3.5em",
+          paddingTop: isScrolled ? "10px" : "",
+        }}
+      >
+        <div className="menu-button">
+          <img src="https://assets.website-files.com/61e343b8f87fb4d287394d48/61e4ea9c83acd6779728fb13_Menu.svg" />
+          <div className="menu-button-text">Menu</div>
         </div>
-        <a href="#" className="logo">
+        {/* <div className="nav-left">
+        </div> */}
+        <a href="#" className={isScrolled ? "logo scroll" : "logo"}>
           <img src="https://assets.website-files.com/61e343b8f87fb4d287394d48/61e49bf24f9edb73ff0823ba_Logo.svg" />
         </a>
         <div className="nav-right">
@@ -51,7 +59,7 @@ function Navbar() {
           </form>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

@@ -1,42 +1,4 @@
-/* .original {
-  background-color: rgba(255, 255, 255, 1);
-  transition: all 250ms ease-in-out;
-} */
-
-/* .navbar {
-  position: fixed;
-  top: 0px;
-  z-index: 500;
-  width: 100%;
-  padding-right: 90px;
-  padding-left: 90px;
-  background-color: rgba(255, 255, 255);
-  transition: all 250ms ease-in-out;
-  padding-top: 10px;
-} */
-
-/* .navbar > .container {
-  margin: 0 5em !important;
-  padding-bottom: 0.7em;
-} */
-
-/* .navbar > .container > .logo {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-} */
 nav {
-  /* background-color: #000; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +6,6 @@ nav {
   position: fixed;
   z-index: 500;
   margin: 0;
-  transition: all 250ms ease-out;
   background: #fff;
 }
 
@@ -55,7 +16,6 @@ nav {
   display: inline-block;
   max-width: 100%;
   vertical-align: middle;
-  transition: all 250ms ease-out;
 }
 
 .container {
@@ -67,11 +27,8 @@ nav {
   grid-template-columns: 1fr auto 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  /* justify-content: space-between;
-  align-items: center; */
   border-bottom: 1px solid #e4e4e4;
   background: rgba(255, 255, 255);
-  transition: all 250ms ease-out;
 }
 
 .menu-button {
@@ -127,7 +84,7 @@ nav {
   display: inline-block;
   max-width: 100%;
   vertical-align: middle;
-  transition: all 250ms ease-out;
+  transition: height 250ms ease-out;
 }
 
 .w-form {
@@ -141,7 +98,6 @@ nav {
   margin-bottom: 0px;
   padding: 0px;
   border: 1px none transparent;
-  /* background-color: red; */
   color: #000 !important;
   font-size: 13px;
   font-weight: 600;
